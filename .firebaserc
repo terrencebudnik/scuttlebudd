@@ -1,15 +1,5 @@
 {
   "projects": {
     "default": "scuttlebudd-4ff87"
-  },
-  "targets": {
-    "scuttlebudd-4ff87": {
-      "hosting": {
-        "scuttlebudd": [
-          "scuttlebudd"
-        ]
-      }
-    }
-  },
-  "etags": {}
+  }
 }
