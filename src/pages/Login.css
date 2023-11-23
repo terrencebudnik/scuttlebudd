@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+
+.login-page {
+  padding: 30px;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 30px;
+  color: black;
+    font-family: 'Short Stack', cursive;
+}
+
+.login-page :is(h2, p, img) {
+  margin-bottom: 20px;
+}
