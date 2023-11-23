@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Short+Stack&display=swap");
+
+.quick-play-page {
+  display: grid;
+  justify-content: center;
+  /* height: 600px; */
+  font-family: "Short Stack", cursive;
+}
+
+.quick-play-page-body {
+  text-align: center;
+  justify-content: center;
+  margin-top: 20%;
+  font-size: 30px;
+}
+
+.time-left-div {
+  margin-bottom: 40px;
+}
+
+.quick-play-page-text-input {
+  height: 200px;
+  font-size: 20px;
+}
