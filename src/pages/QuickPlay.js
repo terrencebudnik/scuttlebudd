@@ -6,6 +6,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
 import scuttlebuddList from "../data/scuttlebuddList.json";
 import calculateScore from "../data/calculateScore";
+import KeyboardBasic from "../keyboards/KeyBoardBasic";
 import "./QuickPlay.css";
 
 const QuickPlay = () => {
@@ -35,7 +36,7 @@ const QuickPlay = () => {
       timer = setTimeout(() => setCountdown(countdown - 1), 1000);
     } else if (gameState === "showSentence" && countdown === 0) {
       setGameState("input");
-      setCountdown(5);
+      setCountdown(15);
     } else if (gameState === "input" && countdown > 0) {
       timer = setTimeout(() => setCountdown(countdown - 1), 1000);
     } else if (gameState === "input" && countdown === 0) {
@@ -67,8 +68,8 @@ const QuickPlay = () => {
     return scoreRef;
   };
 
-  const handleInputChange = (e) => {
-    setUserInput(e.target.value);
+  const handleInputChange = (event) => {
+    setUserInput(event.target.value);
   };
 
   return (
@@ -90,10 +91,16 @@ const QuickPlay = () => {
               placeholder="Type the sentence here..."
               readOnly
             />
+          
           </>
         )}
         {gameState === "finished" && <h3>Time's up!</h3>}
       </div>
+      <KeyboardBasic
+            inputName="input"
+            value={userInput}
+            onChange={(newValue) => setUserInput(newValue.input)} 
+          />
     </div>
   );
 };

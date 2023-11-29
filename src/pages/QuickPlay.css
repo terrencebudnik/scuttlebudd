@@ -10,7 +10,8 @@
 .quick-play-page-body {
   text-align: center;
   justify-content: center;
-  margin-top: 20%;
+  margin-top: 50px;
+  padding: 20px;
   font-size: 30px;
 }
 
@@ -19,6 +20,8 @@
 }
 
 .quick-play-page-text-input {
+  width: 350px;
   height: 200px;
+  padding: 10px;
   font-size: 20px;
 }

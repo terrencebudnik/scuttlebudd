@@ -8,10 +8,10 @@ const HowToPlay = ({ open, onClose }) => {
     <div className="how-to-play-modal">
       <div className="how-to-play">
         <ul>
-          <li>The Scuttlebutt will appear for seconds</li>
+          <li>The Scuttlebudd will appear for seconds</li>
           <li>It will then disappear</li>
-          <li>Remember the Scuttlebutt</li>
-          <li>Type the Scuttlebutt just as you saw it</li>
+          <li>Remember the Scuttlebudd</li>
+          <li>Type the Scuttlebudd just as you saw it</li>
           <button onClick={onClose}>Close</button>
         </ul>
       </div>

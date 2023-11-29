@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import HowToPlay from "../components/HowToPlay";
 import { Link } from "react-router-dom";
 import "./Home.css";
@@ -7,6 +7,8 @@ const Home = () => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+
+  
 
   return (
     <main className="home-page">
@@ -35,6 +37,7 @@ const Home = () => {
       </div>
       
       <HowToPlay open={open} onClose={handleClose} />
+      
     </main>
   );
 };
