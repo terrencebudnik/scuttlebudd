@@ -12,7 +12,7 @@ const Home = () => {
 
   return (
     <main className="home-page">
-      <h2>What's the Scuttlebudd?</h2>
+      <h2 className="home-page-header">What's the Scuttlebudd?</h2>
       <button className="how-to-play-button" onClick={handleOpen}>
         How To Play
       </button>
