@@ -1,14 +1,17 @@
-html, body, #root {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-}
+@import url("https://fonts.googleapis.com/css2?family=Short+Stack&display=swap");
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
+body, #root {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0px;
+  font-family: "Short Stack", cursive;
+}
 
 button,
 input {
@@ -16,8 +19,8 @@ input {
 }
 
 .App {
-  width: 100%;
-height: 100%;
+  position: relative;
+  min-height: 100vh;
   background-color: #e5e5f7;
   opacity: 0.8;
   background-size: 20px 70px;
@@ -28,7 +31,6 @@ height: 100%;
     #c7c7ca 1px,
     #c7c7ca
   );
-  padding-top: 60px;
 }
 
 /* navbar */

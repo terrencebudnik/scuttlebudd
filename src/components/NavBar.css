@@ -1,28 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Short+Stack&display=swap");
-
-.nav-bar {
-  display: flex;
-  padding: 10px 30px;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #00d8ffff;
-  height: 60px;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-}
-
-.nav-bar-link {
+.main-link {
   text-decoration: none;
-}
-
-.nav-bar-header {
-  font-size: 1.5rem;
+  color: white;
   font-weight: 600;
-  color: black;
-  font-family: "Short Stack", cursive;
 }
 
 .login-button {

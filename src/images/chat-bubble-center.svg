@@ -1,0 +1,8 @@
+<svg version="1.1" width="380" height="160" viewBox="0 0 420 320" xmlns="http://www.w3.org/2000/svg" >
+  <g transform="matrix(3.67 0 0 2.44 557.9 502.23)">
+    <path style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(127,190,127); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-190, -210)" d="M 12 12 L 180 12 Q 192 12 192 24 L 192 96 Q 192 108 180 108 L 84 108 L 96 132 L 108 108 L 12 108 Q 0 108 0 96 L 0 24 Q 0 12 12 12" stroke-linecap="round" />
+  </g>
+  <text x="50%" y="20%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="60" font-family="Short Stack, cursive">Start</text>
+  <text x="50%" y="40%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="60" font-family="Short Stack, cursive">the</text>
+  <text x="50%" y="60%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="60" font-family="Short Stack, cursive">Scuttlebudd!</text>
+</svg>

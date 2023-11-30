@@ -4,9 +4,9 @@ import {  addDoc, collection, serverTimestamp } from "firebase/firestore";
 // import {  addDoc, collection, serverTimestamp, query, where, getDocs } from "firebase/firestore";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
-import scuttlebuddList from "../data/scuttlebuddList.json";
-import calculateScore from "../data/calculateScore";
-import KeyboardBasic from "../keyboards/KeyBoardBasic";
+import scuttlebuddList from "../utils/scuttlebuddList.json";
+import calculateScore from "../utils/calculateScore";
+import KeyboardBasic from "../utils/KeyBoardBasic";
 import "./QuickPlay.css";
 
 const QuickPlay = () => {

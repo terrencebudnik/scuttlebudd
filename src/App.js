@@ -1,7 +1,7 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React from "react";
 import { auth } from "./firebase";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
-import "./App.css";
 import NavBar from "./components/NavBar";
 // import ChatBox from "./components/ChatBox";
 import Login from "./pages/Login";
@@ -12,12 +12,15 @@ import StartScuttlebudd from "./pages/StartScuttlebudd";
 import Friends from "./pages/Friends";
 import WhatsTheScuttlebudd from "./pages/WhatsTheScuttlebudd";
 import Footer from "./components/Footer";
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
+import "./App.css";
 
 function App() {
   const [user] = useAuthState(auth);
 
   return (
-    <div className="App">
+    <Container className="App" maxWidth={false} disableGutters={true}>
       <Router>
         <NavBar />
         <Routes>
@@ -39,7 +42,7 @@ function App() {
         </Routes>
         <Footer />
       </Router>
-    </div>
+    </Container>
   );
 }
 

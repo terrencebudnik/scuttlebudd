@@ -1,8 +1,18 @@
 import React, { useEffect } from "react";
 import { auth, db } from "../firebase";
-import { addDoc, collection, serverTimestamp, query, where, getDocs } from "firebase/firestore";
+import {
+  addDoc,
+  collection,
+  serverTimestamp,
+  query,
+  where,
+  getDocs,
+} from "firebase/firestore";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { GoogleAuthProvider, signInWithRedirect } from "firebase/auth";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 
@@ -13,7 +23,7 @@ const NavBar = () => {
     if (user) {
       createUser();
     }
-  }, [user]); 
+  }, [user]);
 
   const googleSignIn = async () => {
     const provider = new GoogleAuthProvider();
@@ -21,12 +31,11 @@ const NavBar = () => {
   };
 
   const createUser = async () => {
-    if (!auth.currentUser) return; 
+    if (!auth.currentUser) return;
 
     const uid = auth.currentUser.uid;
     const userName = auth.currentUser.email.split("@")[0];
 
- 
     const usersRef = collection(db, "users");
     const q = query(usersRef, where("id", "==", uid));
     const querySnapshot = await getDocs(q);
@@ -45,21 +54,28 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="nav-bar">
-      <Link to="/" className="nav-bar-link">
-      
-      <h1 className="nav-bar-header">Scuttlebudd</h1>
-      </Link>
-      {user ? (
-        <button onClick={signOut} className="logout-button" type="button">
-          Sign Out
-        </button>
-      ) : (
-        <button onClick={googleSignIn} className="login-button" type="button">
-          Login
-        </button>
-      )}
-    </nav>
+    <Box sx={{ display: "flex", flexGrow: 1 }}>
+      <AppBar position="static" sx={{ backgroundColor: "#00d8ffff" }}>
+        <Toolbar sx={{ justifyContent: "space-between" }}>
+          <Link to="/" className="main-link">
+            <h1>Scuttlebudd</h1>
+          </Link>
+          {user ? (
+            <button onClick={signOut} className="logout-button" type="button">
+              Sign Out
+            </button>
+          ) : (
+            <button
+              onClick={googleSignIn}
+              className="login-button"
+              type="button"
+            >
+              Login
+            </button>
+          )}
+        </Toolbar>
+      </AppBar>
+    </Box>
   );
 };
 
