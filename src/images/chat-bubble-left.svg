@@ -1,5 +1,8 @@
-<svg width="240" height="160" xmlns="http://www.w3.org/2000/svg">
-  <!-- Flipped chat bubble with pointer on the left, 20% larger -->
-  <path d="M12,12 L180,12 Q192,12 192,24 L192,96 Q192,108 180,108 L60,108 L36,132 L36,108 L12,108 Q0,108 0,96 L0,24 Q0,12 12,12" fill="#ffa500ff" transform="scale(-1,1) translate(-240,0)" />
-  <text x="58%" y="40%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="24" font-family="Short Stack, cursive">Quick Play</text>
+<?xml version="1.0" encoding="utf-8"?>
+<svg  width="280" height="140" viewBox="134.8 178 230.4 144" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path d="M 149.2 322 L 350.8 322 C 360.4 322 365.2 317.2 365.2 307.6 L 365.2 221.2 C 365.2 211.6 360.4 206.8 350.8 206.8 L 206.8 206.8 L 178 178 L 178 206.8 L 149.2 206.8 C 139.6 206.8 134.8 211.6 134.8 221.2 L 134.8 307.6 C 134.8 317.2 139.6 322 149.2 322" fill="#ffa500ff" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, 0.000003, 0.000003)"/>
+    <text style="white-space: pre; fill: white; font-family: Short Stack, cursive; font-size: 32px;" x="215.52" y="225.975">Quick</text>
+<text style="white-space: pre; fill: white; font-family: Short Stack, cursive; font-size: 32px;" x="230.52" y="260.975">Play</text>
+  </g>
 </svg>

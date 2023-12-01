@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import Container from "@mui/material/Container";
+import Box from '@mui/material/Box';
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import chatBubbleRight from "../images/chat-bubble-right.svg";
@@ -15,33 +16,33 @@ const Home = () => {
   const handleClose = () => setOpen(false);
 
   return (
-    <Container maxWidth={false} disableGutters={true}>
-      <List>
-        <ListItem sx={{ paddingLeft: "0px" }}>
+    <Box  sx={{ display: "flex", flexDirection: "column", flexGrow: 1, padding: "30px 0" }}>
+ 
+        <div style={{ display: "flex", justifyContent: "flex-start", margin: "20px 0"}}>
           <Link to="/quickplay">
             <img
               src={chatBubbleLeft}
               className="elevated-svg"
             />
           </Link>
-        </ListItem>
-        <ListItem sx={{ justifyContent: "flex-end", paddingRight: "0px" }}>
+        </div>
+        <div style={{ display: "flex", justifyContent: "flex-end", margin: "20px 0"}}>
           <Link to="/whatsthescuttlebudd">
             <img
               src={chatBubbleRight}
               className="elevated-svg"
             />
           </Link>
-        </ListItem>
-        <ListItem sx={{ justifyContent: "center", padding:"0px"}}>
+        </div>
+        <div style={{ display: "flex", justifyContent: "center", margin: "80px 0"}}>
           <Link to="/startscuttlebudd" sx={{ justifyContent: "center"}}>
             <img
               src={chatBubbleCenter}
               className="elevated-svg"
             />
           </Link>
-        </ListItem>
-      </List>
+        </div>
+    
 
       {/* <button className="how-to-play-button" onClick={handleOpen}>
         How To Play
@@ -63,7 +64,7 @@ const Home = () => {
    */}
 
       <HowToPlay open={open} onClose={handleClose} />
-    </Container>
+    </Box>
   );
 };
 
