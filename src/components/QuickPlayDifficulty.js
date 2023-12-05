@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
+import { Link } from "react-router-dom";
 import chatBubbleEasy from "../images/chat-bubble-easy.svg";
 import chatBubbleMedium from "../images/chat-bubble-medium.svg";
 import chatBubbleHard from "../images/chat-bubble-hard.svg";
@@ -25,8 +25,16 @@ const QuickPlayDifficulty = () => {
           paddingLeft: "10px",
         }}
       >
-        <Link to="/quickplay">
-          <img src={chatBubbleEasy} className="elevated-svg" alt="chat-bubble-easy" />
+        <Link
+          to="/quickscuttlebudd"
+          state={{ difficulty: "Easy" }}
+          style={{ textDecoration: "none" }}
+        >
+          <img
+            src={chatBubbleEasy}
+            className="elevated-svg"
+            alt="chat-bubble-easy"
+          />
         </Link>
       </div>
       <div
@@ -37,8 +45,16 @@ const QuickPlayDifficulty = () => {
           paddingRight: "10px",
         }}
       >
-        <Link to="/whatsthescuttlebudd">
-          <img src={chatBubbleMedium} className="elevated-svg" alt="chat-bubble-medium" />
+        <Link
+          to="/quickscuttlebudd"
+          state={{ difficulty: "Medium" }}
+          style={{ textDecoration: "none" }}
+        >
+          <img
+            src={chatBubbleMedium}
+            className="elevated-svg"
+            alt="chat-bubble-medium"
+          />
         </Link>
       </div>
       <div
@@ -49,8 +65,16 @@ const QuickPlayDifficulty = () => {
           paddingLeft: "10px",
         }}
       >
-        <Link to="/quickplay">
-          <img src={chatBubbleHard} className="elevated-svg" alt="chat-bubble-hard" />
+        <Link
+          to="/quickscuttlebudd"
+          state={{ difficulty: "Hard" }}
+          style={{ textDecoration: "none" }}
+        >
+          <img
+            src={chatBubbleHard}
+            className="elevated-svg"
+            alt="chat-bubble-hard"
+          />
         </Link>
       </div>
       <div
@@ -61,8 +85,16 @@ const QuickPlayDifficulty = () => {
           paddingRight: "10px",
         }}
       >
-        <Link to="/whatsthescuttlebudd">
-          <img src={chatBubbleExtreme} className="elevated-svg" alt="chat-bubble-extreme" />
+        <Link
+          to="/quickscuttlebudd"
+          state={{ difficulty: "Extreme" }}
+          style={{ textDecoration: "none" }}
+        >
+          <img
+            src={chatBubbleExtreme}
+            className="elevated-svg"
+            alt="chat-bubble-extreme"
+          />
         </Link>
       </div>
       <div
@@ -73,8 +105,16 @@ const QuickPlayDifficulty = () => {
           paddingLeft: "10px",
         }}
       >
-        <Link to="/quickplay">
-          <img src={chatBubbleTricky} className="elevated-svg" alt="chat-bubble-tricky" />
+        <Link
+          to="/quickscuttlebudd"
+          state={{ difficulty: "Tricky" }}
+          style={{ textDecoration: "none" }}
+        >
+          <img
+            src={chatBubbleTricky}
+            className="elevated-svg"
+            alt="chat-bubble-tricky"
+          />
         </Link>
       </div>
     </Box>

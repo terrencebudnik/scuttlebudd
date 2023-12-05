@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Box from "@mui/material/Box";
 import QuickPlayDifficulty from "../components/QuickPlayDifficulty";
 import HowToPlay from "../components/HowToPlay";
@@ -6,6 +7,12 @@ import chatBubbleHowToPlay from "../images/chat-bubble-how-to-play.svg";
 import "./QuickPlay.css";
 
 const QuickPlay = () => {
+  const navigate = useNavigate();
+
+  const handleDifficultySelect = (difficulty) => {
+    navigate("/quickscuttlebudd", { state: { difficulty } });
+  };
+
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -19,7 +26,8 @@ const QuickPlay = () => {
         padding: "30px 0",
       }}
     >
-      <QuickPlayDifficulty />
+      <QuickPlayDifficulty onDifficultySelect={handleDifficultySelect} />
+
       <button
         onClick={handleOpen}
         style={{
@@ -28,7 +36,11 @@ const QuickPlay = () => {
           paddingTop: "0px",
         }}
       >
-        <img src={chatBubbleHowToPlay} alt="how-to-play" />
+        <img
+          src={chatBubbleHowToPlay}
+          className="elevated-svg"
+          alt="how-to-play"
+        />
       </button>
       <HowToPlay open={open} onClose={handleClose} />
     </Box>
