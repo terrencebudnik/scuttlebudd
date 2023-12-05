@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Short+Stack&display=swap");
+
 .elevated-svg {
+  font-family: "Short Stack", cursive;
   filter: drop-shadow(13px 11px 1px rgb(0 0 0 / 0.4));
 }
 

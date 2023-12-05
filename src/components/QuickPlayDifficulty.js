@@ -14,7 +14,7 @@ const QuickPlayDifficulty = () => {
         display: "flex",
         flexDirection: "column",
         flexGrow: 1,
-        padding: "30px 0",
+        padding: "1px 0",
       }}
     >
       <div

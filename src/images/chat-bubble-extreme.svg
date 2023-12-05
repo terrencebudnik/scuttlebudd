@@ -1,5 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg width="280" height="90" viewBox="0 157.1673 500 233.3609" xmlns="http://www.w3.org/2000/svg">
+<svg width="280" height="60" viewBox="0 157.1673 500 233.3609" xmlns="http://www.w3.org/2000/svg">
+   <defs>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Short+Stack:wght@400');
+    </style>
+  </defs>
   <g transform="matrix(1, 0, 0, 1, 0, 8.881784197001252e-16)">
     <g>
       <rect width="560" height="160.604" style="fill: rgb(0, 216, 255); stroke: rgb(0, 216, 255);" y="157.698" rx="55.398" ry="55.398"/>

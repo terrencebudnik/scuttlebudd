@@ -33,7 +33,7 @@ const QuickPlay = () => {
         style={{
           backgroundColor: "transparent",
           border: "none",
-          paddingTop: "0px",
+          paddingTop: "20px",
         }}
       >
         <img

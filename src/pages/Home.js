@@ -10,8 +10,8 @@ const Home = () => {
  
 
   return (
-    <Box  sx={{ display: "flex", flexDirection: "column", flexGrow: 1, padding: "30px 0" }}>
-         <div style={{ display: "flex", justifyContent: "flex-start", margin: "20px 0", paddingLeft: "20px"}}>
+    <Box  sx={{ display: "flex", flexDirection: "column", flexGrow: 1, padding: "10px 0" }}>
+         <div style={{ display: "flex", justifyContent: "flex-start", margin: "1px 0", paddingLeft: "20px"}}>
           <Link to="/quickplay">
             <img
               src={chatBubbleLeft}
@@ -20,7 +20,7 @@ const Home = () => {
             />
           </Link>
         </div>
-        <div style={{ display: "flex", justifyContent: "flex-end", margin: "20px 0", paddingRight: "20px"}}>
+        <div style={{ display: "flex", justifyContent: "flex-end", margin: "1px 0", paddingRight: "20px"}}>
           <Link to="/whatsthescuttlebudd">
             <img
               src={chatBubbleRight}
@@ -29,7 +29,7 @@ const Home = () => {
             />
           </Link>
         </div>
-        <div style={{ display: "flex", justifyContent: "center", margin: "80px 0"}}>
+        <div style={{ display: "flex", justifyContent: "center", margin: "50px 0"}}>
           <Link to="/startscuttlebudd" sx={{ justifyContent: "center"}}>
             <img
               src={chatBubbleCenter}

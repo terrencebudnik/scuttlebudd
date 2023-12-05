@@ -3,7 +3,6 @@
 .quick-play-page {
   display: grid;
   justify-content: center;
-  /* height: 600px; */
   font-family: "Short Stack", cursive;
 }
 
@@ -21,7 +20,7 @@
 
 .quick-play-page-text-input {
   width: 350px;
-  height: 200px;
+  height: 100px;
   padding: 10px;
   font-size: 20px;
 }
