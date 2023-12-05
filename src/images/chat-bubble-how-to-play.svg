@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="340" height="100" viewBox="0 138.369 700 261.631" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(1, 0, 0, 1, 247.49998474121094, -49.48700714111328)">
+    <g>
+      <rect width="880" height="210.604" style="fill: rgb(127, 190, 127); stroke: rgb(127, 190, 127);" y="187.856" rx="55.398" ry="55.398" x="-337.5"/>
+    </g>
+    <path transform="translate(81.79, -1.85)" d="M 20.268 449.487 L 103.48 366.527 L -61.173 366.527 L 20.268 449.487 Z" style="fill: rgb(127, 190, 127); stroke: rgb(127, 190, 127);"/>
+    <text style="fill: rgb(255, 255, 255); font-family: Short Stack, cursive; font-size: 20.2697px; line-height: 26.3063px; stroke: rgb(255, 255, 255); white-space: pre;" transform="matrix(4.758512, 0, 0, 4.075073, -892.209351, -812.41272)" x="140.642" y="275.747">HOW TO PLAY</text>
+  </g>
+</svg>

@@ -9,19 +9,6 @@
   font-family: "Short Stack", cursive;
 }
 
-.how-to-play-button {
-  padding: 5px 10px;
-  height: 50px;
-  width: 250px;
-  border-radius: 5px;
-  color: black;
-  border: 1px solid black;
-  background-color: #ffa500ff;
-  font-size: 18px;
-  font-weight: 600;
-  font-family: "Short Stack", cursive;
-}
-
 .friends-page-container {
   display: grid;
   grid-template-columns: 1fr;

@@ -1,107 +1,37 @@
-import React, { useState, useEffect } from "react";
-import { auth, db } from "../firebase";
-import {  addDoc, collection, serverTimestamp } from "firebase/firestore";
-// import {  addDoc, collection, serverTimestamp, query, where, getDocs } from "firebase/firestore";
-import { useAuthState } from "react-firebase-hooks/auth";
-import { useNavigate } from "react-router-dom";
-import scuttlebuddList from "../utils/scuttlebuddList.json";
-import calculateScore from "../utils/calculateScore";
-import KeyboardBasic from "../utils/KeyBoardBasic";
+import React, { useState } from "react";
+import Box from "@mui/material/Box";
+import QuickPlayDifficulty from "../components/QuickPlayDifficulty";
+import HowToPlay from "../components/HowToPlay";
+import chatBubbleHowToPlay from "../images/chat-bubble-how-to-play.svg";
 import "./QuickPlay.css";
 
 const QuickPlay = () => {
-  const [user] = useAuthState(auth);
-  const [gameState, setGameState] = useState("countdown");
-  const [countdown, setCountdown] = useState(5);
-  const [sentence, setSentence] = useState("");
-  const [userInput, setUserInput] = useState("");
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    const randomIndex = Math.floor(
-      Math.random() * scuttlebuddList.scuttlebuddList.length
-    );
-    setSentence(scuttlebuddList.scuttlebuddList[randomIndex]);
-  }, []);
-
-  useEffect(() => {
-    let timer;
-
-    if (gameState === "countdown" && countdown > 0) {
-      timer = setTimeout(() => setCountdown(countdown - 1), 1000);
-    } else if (gameState === "countdown" && countdown === 0) {
-      setGameState("showSentence");
-      setCountdown(5);
-    } else if (gameState === "showSentence" && countdown > 0) {
-      timer = setTimeout(() => setCountdown(countdown - 1), 1000);
-    } else if (gameState === "showSentence" && countdown === 0) {
-      setGameState("input");
-      setCountdown(15);
-    } else if (gameState === "input" && countdown > 0) {
-      timer = setTimeout(() => setCountdown(countdown - 1), 1000);
-    } else if (gameState === "input" && countdown === 0) {
-      setGameState("finished");
-    }
-
-    return () => clearTimeout(timer);
-  }, [gameState, countdown]);
-
-  useEffect(() => {
-    if (gameState === "finished") {
-      const score = calculateScore(sentence, userInput);
-      logScore(score).then((scoreRef) => {
-        navigate("/results", {
-          state: { scoreId: scoreRef.key, userId: user.uid },
-        });
-      });
-    }
-  }, [gameState, navigate, userInput, sentence]);
-
-  const logScore = async (score) => {
-    const scoreRef = collection(db, "scores");
-    await addDoc(scoreRef, {
-      userId: user.uid,
-      userName: user.displayName,
-      score: score,
-      createdAt: serverTimestamp(),
-    });
-    return scoreRef;
-  };
-
-  const handleInputChange = (event) => {
-    setUserInput(event.target.value);
-  };
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   return (
-    <div className="quick-play-page">
-      <div className="quick-play-page-body">
-        {gameState === "countdown" && <div className="get-ready-box">
-            <h3>Get ready!</h3>
-            <h3>{countdown}</h3>
-            </div>}
-        {gameState === "showSentence" && <div>{sentence}</div>}
-        {gameState === "input" && (
-          <>
-            <h3 className="time-left-div">Time left: {countdown}</h3>
-
-            <textarea
-              className="quick-play-page-text-input"
-              value={userInput}
-              onChange={handleInputChange}
-              placeholder="Type the sentence here..."
-              readOnly
-            />
-          
-          </>
-        )}
-        {gameState === "finished" && <h3>Time's up!</h3>}
-      </div>
-      <KeyboardBasic
-            inputName="input"
-            value={userInput}
-            onChange={(newValue) => setUserInput(newValue.input)} 
-          />
-    </div>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        flexGrow: 1,
+        padding: "30px 0",
+      }}
+    >
+      <QuickPlayDifficulty />
+      <button
+        onClick={handleOpen}
+        style={{
+          backgroundColor: "transparent",
+          border: "none",
+          paddingTop: "0px",
+        }}
+      >
+        <img src={chatBubbleHowToPlay} alt="how-to-play" />
+      </button>
+      <HowToPlay open={open} onClose={handleClose} />
+    </Box>
   );
 };
 

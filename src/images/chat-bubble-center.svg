@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg width="280" height="140" viewBox="134.8 178 230.4 145.207" xmlns="http://www.w3.org/2000/svg">
-  <path d="M 149.2 178 L 350.8 178 C 360.4 178 365.2 182.8 365.2 192.4 L 365.2 278.8 C 365.2 288.4 360.4 293.2 350.8 293.2 L 275.033 293.2 L 251.825 323.207 L 231.692 293.759 C 236.097 293.759 149.2 293.2 149.2 293.2 C 139.6 293.2 134.8 288.4 134.8 278.8 L 134.8 192.4 C 134.8 182.8 139.6 178 149.2 178" fill="#7fbe7f" style=""/>
- <text style="white-space: pre; fill: white; font-family: Short Stack, cursive; font-size: 24px;" x="225.52" y="205.975">Start</text>
-<text style="white-space: pre; fill: white; font-family: Short Stack, cursive; font-size: 24px;" x="240.52" y="237.975">the</text>
-<text style="white-space: pre; fill: white; font-family: Short Stack, cursive; font-size: 24px;" x="190.52" y="268.975">Scuttlebudd!</text>
+<svg width="260" height="140" viewBox="0 157.1696 500 227.9875" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(1, 0, 0, 1, 0, 8.881784197001252e-16)">
+    <g>
+      <rect width="500" height="184.604" style="fill: rgb(127, 190, 127); stroke: rgb(127, 190, 127);" y="157.698" rx="55.398" ry="55.398"/>
+    </g>
+    <path d="M 250.001 -1135.493 L 302.292 -1069.761 L 197.709 -1069.761 L 250.001 -1135.493 Z" style="fill: rgb(127, 190, 127); stroke: rgb(127, 190, 127);" transform="matrix(1, 0, 0, -1, 0, -750.335999)"/>
+    <text style="fill: rgb(255, 255, 255); font-family: Short Stack, cursive; font-size: 10.2697px; line-height: 26.3063px; stroke: rgb(255, 255, 255); white-space: pre;" transform="matrix(4.758512, 0, 0, 4.075073, -620.481995, -842.178711)" x="164.642" y="256.747">START</text>
+    <text style="fill: rgb(255, 255, 255); font-family: Short Stack, cursive; font-size: 10.2697px; line-height: 26.3063px; stroke: rgb(255, 255, 255); white-space: pre;" transform="matrix(4.758512, 0, 0, 4.075073, -581.323975, -789.169739)" x="162.642" y="256.747">THE</text>
+    <text style="fill: rgb(255, 255, 255); font-family: Short Stack, cursive; font-size: 10.2697px; line-height: 26.3063px; stroke: rgb(255, 255, 255); white-space: pre;" transform="matrix(4.758512, 0, 0, 4.075073, -755.890137, -738.939209)"  x="172.642" y="256.747">SCUTTLEBUDD!</text>
+  </g>
 </svg>

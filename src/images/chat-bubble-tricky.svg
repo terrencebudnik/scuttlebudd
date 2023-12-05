@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="280" height="90" viewBox="0 157.698 500 232.8297" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(1, 0, 0, 1, 0, 8.881784197001252e-16)">
+    <g>
+      <rect width="580" height="160.604" style="stroke: rgb(255, 255, 255); fill: rgb(255, 165, 0);" y="157.698" rx="55.398" ry="55.398" x="-500" transform="matrix(-1, 0, 0, 1, 0, 0)"/>
+    </g>
+    <path d="M -373.884 -408.034 L -321.593 -342.302 L -426.176 -342.302 L -373.884 -408.034 Z" style="fill: rgb(255, 165, 0); stroke: rgb(255, 165, 0);" transform="matrix(0, -1, 1, 0, 808.033997, -65.648315)"/>
+    <text style="fill: rgb(255, 255, 255); font-family: Short Stack, cursive; font-size: 20.2697px; line-height: 26.3063px; stroke: rgb(255, 255, 255); white-space: pre;" transform="matrix(4.758512, 0, 0, 4.075073, -603.602356, -745.845886)" x="136.642" y="248.747">TRICKY</text>
+  </g>
+</svg>

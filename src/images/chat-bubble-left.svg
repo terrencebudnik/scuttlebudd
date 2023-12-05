@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg  width="280" height="140" viewBox="134.8 178 230.4 144" xmlns="http://www.w3.org/2000/svg">
-  <g>
-    <path d="M 149.2 322 L 350.8 322 C 360.4 322 365.2 317.2 365.2 307.6 L 365.2 221.2 C 365.2 211.6 360.4 206.8 350.8 206.8 L 206.8 206.8 L 178 178 L 178 206.8 L 149.2 206.8 C 139.6 206.8 134.8 211.6 134.8 221.2 L 134.8 307.6 C 134.8 317.2 139.6 322 149.2 322" fill="#ffa500ff" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, 0.000003, 0.000003)"/>
-    <text style="white-space: pre; fill: white; font-family: Short Stack, cursive; font-size: 32px;" x="215.52" y="225.975">Quick</text>
-<text style="white-space: pre; fill: white; font-family: Short Stack, cursive; font-size: 32px;" x="230.52" y="260.975">Play</text>
+<svg width="260" height="140" viewBox="0 157.698 500 232.8297" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(1, 0, 0, 1, 0, 8.881784197001252e-16)">
+    <g>
+      <rect width="500" height="184.604" style="stroke: rgb(255, 255, 255); fill: rgb(255, 165, 0);" y="157.698" rx="55.398" ry="55.398" x="-500" transform="matrix(-1, 0, 0, 1, 0, 0)"/>
+    </g>
+    <path d="M -373.884 -408.034 L -321.593 -342.302 L -426.176 -342.302 L -373.884 -408.034 Z" style="fill: rgb(255, 165, 0); stroke: rgb(255, 165, 0);" transform="matrix(0, -1, 1, 0, 808.033997, -35.648315)"/>
+    <text style="fill: rgb(255, 165, 0); font-family: Short Stack, cursive; font-size: 12.2697px; line-height: 26.3063px; stroke: rgb(255, 255, 255); white-space: pre;" transform="matrix(4.758512, 0, 0, 4.075073, -626.701477, -807.258545)"><tspan style="fill: rgb(255, 255, 255); font-family: Short Stack, cursive;" x="162.642" y="256.747">QUICK</tspan><tspan> </tspan></text>
+    <text style="fill: rgb(255, 255, 255); font-family: Short Stack, cursive; font-size: 12.2697px; line-height: 26.3063px; stroke: rgb(255, 255, 255); white-space: pre;" transform="matrix(4.758512, 0, 0, 4.075073, -603.602356, -745.845886)" x="164.642" y="256.747">PLAY</text>
   </g>
 </svg>
