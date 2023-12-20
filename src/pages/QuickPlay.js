@@ -31,16 +31,33 @@ const QuickPlay = () => {
       <button
         onClick={handleOpen}
         style={{
+          position: "relative",
+          textAlign: "center",
+          display: "inline-block",
+          paddingTop: "20px",
           backgroundColor: "transparent",
           border: "none",
-          paddingTop: "20px",
         }}
       >
         <img
           src={chatBubbleHowToPlay}
           className="elevated-svg"
+          style={{ width: "100%", height: "auto" }}
           alt="how-to-play"
         />
+        <div
+          style={{
+            position: "absolute",
+            top: "45%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            color: "white",
+            fontSize: "28px",
+            fontFamily: "Short Stack"
+          }}
+        >
+          How to Play
+        </div>
       </button>
       <HowToPlay open={open} onClose={handleClose} />
     </Box>

@@ -1,16 +1,8 @@
 <svg width="260" height="100" viewBox="0 157.1696 500 227.9875" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <style type="text/css">
-      @import url('https://fonts.googleapis.com/css2?family=Short+Stack:wght@400');
-    </style>
-</defs>
   <g transform="matrix(1, 0, 0, 1, 0, 8.881784197001252e-16)">
     <g>
       <rect width="500" height="184.604" style="fill: rgb(127, 190, 127); stroke: rgb(127, 190, 127);" y="157.698" rx="55.398" ry="55.398"/>
     </g>
     <path d="M 250.001 -1135.493 L 302.292 -1069.761 L 197.709 -1069.761 L 250.001 -1135.493 Z" style="fill: rgb(127, 190, 127); stroke: rgb(127, 190, 127);" transform="matrix(1, 0, 0, -1, 0, -750.335999)"/>
-    <text style="fill: rgb(255, 255, 255); font-family: Short Stack, cursive; font-size: 10.2697px; line-height: 26.3063px; stroke: rgb(255, 255, 255); white-space: pre;" transform="matrix(4.758512, 0, 0, 4.075073, -620.481995, -842.178711)" x="164.642" y="256.747">START</text>
-    <text style="fill: rgb(255, 255, 255); font-family: Short Stack, cursive; font-size: 10.2697px; line-height: 26.3063px; stroke: rgb(255, 255, 255); white-space: pre;" transform="matrix(4.758512, 0, 0, 4.075073, -581.323975, -789.169739)" x="162.642" y="256.747">THE</text>
-    <text style="fill: rgb(255, 255, 255); font-family: Short Stack, cursive; font-size: 10.2697px; line-height: 26.3063px; stroke: rgb(255, 255, 255); white-space: pre;" transform="matrix(4.758512, 0, 0, 4.075073, -755.890137, -738.939209)"  x="172.642" y="256.747">SCUTTLEBUDD!</text>
   </g>
 </svg>
